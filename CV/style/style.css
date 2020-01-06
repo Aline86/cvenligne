@@ -1,0 +1,574 @@
+body{
+    background-color: rgb(241, 236, 236);
+}
+
+h2{
+    color: purple;
+}
+
+h1{
+    margin-top: 80px;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.general{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border: 15px solid purple;
+    border-radius: 90px;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: white;
+}
+
+.profil_pic{
+    margin-top: 30px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding:0;
+}
+.contact{
+    text-align: center;
+    
+   
+    font-family: 'Ibarra Real Nova', serif;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.pro_pic{
+    margin-top: 30px;
+    width: 200px;
+    height: 250px;
+   
+}
+.general_info{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+.contact{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.title{
+    font-size: 30px;
+    font-family: 'Ibarra Real Nova', serif;
+    margin: 0;
+    padding: 0;
+    
+}
+.langues{
+    text-align: center;
+    font-size: 30px;
+}
+.computer_knowledge{
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Ibarra Real Nova', serif;
+
+}
+.framework{
+    text-decoration: black;
+}
+.fa-js-square, .fa-php, .fa-symfony, .fa-react{
+    font-size: 60px;
+  
+}
+
+.ck{
+    font-size: 30px;
+    text-align: center;
+  
+}
+.ls{
+    margin-bottom: 30px;
+}
+.german, .english {
+    display: inline-block;
+    height: 15px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: blueviolet;
+    margin-left: 30px;
+   
+}
+.visible{
+    display: none;
+    width: 550px;
+    height: 450px;
+}
+p{
+    font-size: 20px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.logistics, .kwowhow, .languages, .pro{
+    display: none;
+    font-family: 'Ibarra Real Nova', serif;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.button{
+    text-align: center;
+    margin-top: 30px;
+}
+.inside_button{
+ 
+    margin: 0 auto;
+}
+.rest, .rest1{
+    height: 15px;
+    width: 20px;
+    border: 1px solid black;
+    display: inline-block;
+}
+.rest2{
+    height: 15px;
+    width: 40px;
+    border: 1px solid black;
+    display: inline-block;
+}
+.rest3{
+    height: 15px;
+    width: 60px;
+    border: 1px solid black;
+    display: inline-block;
+
+}
+
+.spanish {
+    display: inline-block;
+    height: 15px;
+    width: 80px;
+    border: 1px solid black;
+    background-color: blueviolet;
+    margin-left: 30px;
+    
+    
+}
+img{
+    width: 55px;
+    height: 50px;
+    margin:0;
+}
+
+.russian {
+    display: inline-block;
+    height: 15px;
+    width: 60px;
+    border: 1px solid black;
+    background-color: blueviolet;
+    margin-left: 30px;
+}
+
+.de, .en, .es, .ru{
+    display: inline-block;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+button{
+    display:inline-block;
+    background-color: purple;
+    height: 75px;
+    border: 0;
+    color: white;
+    font-size: 25px;
+    width: 30px;
+   
+}
+.prof, .know, .language, .formation{
+    width: 85%;
+    margin: 0 auto;
+    border: 1px solid purple;
+    margin-bottom: 30px;
+    font-family: 'Ibarra Real Nova', serif;
+   
+   
+}
+*{
+    box-sizing: border-box;
+}
+#f, #p , #c, #l{
+    display: inline-block;
+   
+   text-align: left;
+   width: 95%;
+   font-size: 30px;
+   padding-left: 30px;
+   color: black;
+   font-family: 'Ibarra Real Nova', serif;
+}
+
+#slider {
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 4px;
+  }
+  
+#slider ul {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    height: 500px;
+    width: 300px;
+    list-style: none;
+}
+
+#slider ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 auto;
+    padding: 0;
+    width: 300px;;
+    height: 500px;
+    background: #ccc;
+    text-align: center;
+}
+  
+  a.control_prev, a.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  a.control_prev:hover, a.control_next:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+  }
+  
+  a.control_prev {
+    border-radius: 0 2px 2px 0;
+  }
+  
+  a.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+  }
+
+@media screen and (min-width: 700px){
+
+p, h2, h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.globalknowledge{
+    margin: 0;
+    padding: 0;
+}
+
+.purple_background{
+    background-color: purple;
+   
+}
+
+.title{
+    margin: 30px;
+    font-size: 30px;
+    font-family: 'Ibarra Real Nova', serif;
+    
+}
+
+.name{
+    font-size: 30px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.birth{
+    font-size: 25px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.general{
+    margin: 0;
+    padding: 0;
+}
+
+.contact_title, .phone, .address{
+    font-size: 30px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+
+
+.general{
+    display: flex;
+    flex-direction: row;;
+    width: 80%;
+    border: 15px solid purple;
+    border-radius: 90px;
+    margin: 0 auto;
+  
+    background-color: white;
+    
+}
+
+.profil_pic{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   width: 33%;
+}
+
+.pro_pic{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+   
+    width: 200px;
+    height: 250px;
+}
+
+.general_info{
+    width: 33%;
+}
+
+.contact{
+    width: 33%;
+}
+
+.langues{
+    text-align: center;
+    font-size: 40px;
+}
+
+.computer_knowledge{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.framework{
+    text-decoration: black;
+}
+
+.fa-js-square, .fa-php, .fa-symfony, .fa-react{
+    font-size: 60px;
+}
+
+.ck{
+    font-size: 50px;
+    text-align: center;
+}
+
+.js, .php, .ajax, .python, .html, .framework, .symfony {
+    margin-right: 60px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.ls{
+    margin-bottom: 30px;
+}
+
+.german, .english {
+    display: inline-block;
+    height: 15px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: blueviolet;
+    margin-left: 30px; 
+}
+
+.visible{
+    display: none;
+    width: 550px;
+    height: 450px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.logistics, .kwowhow, .languages, .pro{
+    display: none;
+}
+
+button{
+    display:inline-block;
+    background-color: purple;
+    height: 75px;
+    border: 0;
+    color: white;
+    font-size: 25px;
+    width: 5%;
+   
+}
+
+.prof, .know, .language, .formation{
+    width: 85%;
+    margin: 0 auto;
+    border: 1px solid purple;
+    margin-bottom: 30px;
+    background-color: rgb(116, 9, 116);
+    font-family: 'Ibarra Real Nova', serif;
+   
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#f, #p , #c, #l{
+    display: inline-block;
+   text-align: left;
+   width: 95%;
+   font-size: 30px;
+   padding-left: 30px;
+   color: white;
+   font-family: 'Ibarra Real Nova', serif;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.part{
+    display: flex;
+}
+
+.button{
+    margin-top: 30px;
+}
+
+.inside_button{
+    display: flex;
+    flex-direction: column;
+}
+
+.rest, .rest1{
+    height: 15px;
+    width: 20px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.rest2{
+    height: 15px;
+    width: 40px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.rest3{
+    height: 15px;
+    width: 60px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.spanish {
+    display: inline-block;
+    height: 15px;
+    width: 80px;
+    border: 1px solid black;
+    background-color: blueviolet;
+    margin-left: 30px; 
+}
+
+img{
+    width: 55px;
+    height: 50px;
+    margin:0;
+}
+
+.russian {
+    display: inline-block;
+    height: 15px;
+    width: 60px;
+    border: 1px solid black;
+    background-color: blueviolet;
+    margin-left: 30px;
+}
+
+.de, .en, .es, .ru{
+    display: inline-block;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider {
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 4px;
+  }
+  
+#slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 650px;
+    height: 600px;
+    list-style: none;
+}
+#slider ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 650px;
+    height: 500px;
+    background: #ccc;
+    text-align: center;
+  }
+  
+a.control_prev, a.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+a.control_prev:hover, a.control_next:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+}
+  
+a.control_prev {
+    border-radius: 0 2px 2px 0;
+}
+  
+a.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+}
+}
