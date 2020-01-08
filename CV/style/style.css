@@ -63,7 +63,7 @@ img{
     font-family: 'Ibarra Real Nova', serif;
 }
 
-.title{
+.title, .length{
     font-size: 30px;
     font-family: 'Ibarra Real Nova', serif;
     margin: 0;
@@ -204,7 +204,7 @@ button{
 }
 #f, #p , #c, #l{
     display: inline-block;
-   
+  
    text-align: center;
    width: 90%;
    font-size: 30px;
@@ -385,7 +385,7 @@ p, h2, h1{
     text-align: center;
 }
 
-.js, .php, .ajax, .python, .html, .framework, .symfony {
+.js, .php, .ajax, .python, .html, .framework, .symfony, .react {
     margin-right: 60px;
     font-family: 'Ibarra Real Nova', serif;
 }
@@ -444,12 +444,13 @@ button{
 
 #f, #p , #c, #l{
     display: inline-block;
-   text-align: left;
-   width: 95%;
-   font-size: 30px;
-   padding-left: 30px;
-   color: purple;
-   font-family: 'Ibarra Real Nova', serif;
+    text-align: left;
+    height: 55px;
+    width: 95%;
+    font-size: 30px;
+    padding-left: 30px;
+    color: purple;
+    font-family: 'Ibarra Real Nova', serif;
     font-family: Arial, Helvetica, sans-serif;
    
 }

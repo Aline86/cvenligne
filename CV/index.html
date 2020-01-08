@@ -19,7 +19,8 @@
                 </div>
                 <div class="general_info">
                     <p class="name">HAESTIE Claire-Aline</p>
-                    <h1 class="title">Stage de Développement Web<br />Avril - Mai</h1>
+                    <h1 class="title">Stage de Développement Web</h1>
+                    <div class="length"><strong>Avril - Mai</strong></div>
                 </div>
                 <div class="contact">
                     <h2 class="contact_title">CONTACT:</h2>
@@ -41,7 +42,7 @@
                         <span class="html">HTML /CSS/ BootStrap</span><br />
                         <span class="framework"><u>Frameworks :</u></span>
                         <span class="symfony">Symfony</span>
-                        <i class="fab fa-react"></i><span> Notions en React</span>
+                        <i class="fab fa-react"></i><span class="react"> Notions en React</span>
                     </p>
                 </div>
                 
@@ -49,13 +50,13 @@
             <div class="button">
                 <div class="inside_button">
                 
-                       <div class="formation"><span id="f">Formation</span><a href="#forma"><button><i class="fas fa-angle-down"></i></button></a></div>
+                       <div class="formation"><span id="f" class="click">Formation</span><a href="#forma"><button><i class="fas fa-angle-down"></i></button></a></div>
                         <div class="logistics" id="forma">
                             <div class="global_logistics">
 
                                 <div class="study">
                                     <h2>Formation</h2>
-                                    <h3>Octobre 2019 - Juin 2020 :</h3><p>Titre Professionnel Développeur d'Applications web et web mobile</p>
+                                    <h3>Octobre 2019 - Juin 2020 :</h3><p>Titre Professionnel Développeur d'Applications web et web mobile ISFAC de Poitiers</p>
                                     <h3>Septembre 2012 - Octobre 2014 :</h3><p>Master de Management des PME et Entrepreneuriat Institut d’Administration des Entreprises Tours, France</p>
                                     <h3>Septembre 2008 - Septembre 2011 :</h3><p>Licence de Langues Étrangères Appliquées Université de Poitiers + Licence 3 Erasmus Université Otto Von Guericke de Magdeburg Allemagne</p>
                                 </div>
@@ -64,7 +65,7 @@
                      
                     </div>
                   
-                    <div class="prof"><span id="p">Expériences professionnelles en France et à l'étranger</span><a href="#pro"><button><i class="fas fa-angle-down"></i></button></a></div>
+                    <div class="prof"><span id="p" class="click">Expériences professionnelles en France et à l'étranger</span><a href="#pro"><button><i class="fas fa-angle-down"></i></button></a></div>
                     <div class="pro">
                         <h2 id="pro">Expériences professionnelles</h2>
                         <div id="slider" class="slider">
@@ -100,7 +101,7 @@
                     </div>
                     </div>
                  
-                    <div class="know"><span id="c">Qualités professionnelles</span><a href="#organisation"><button><i class="fas fa-angle-down"></i></button></a></div>
+                    <div class="know"><span id="c" class="click">Qualités professionnelles</span><a href="#organisation"><button><i class="fas fa-angle-down"></i></button></a></div>
                     <div class="kwowhow">
                         <h2>Qualités professionnelles</h2>
                         <p>Rigueur</p>
@@ -110,7 +111,7 @@
                     </div>
            
                  
-                    <div class="language"><span id="l">Langues Étrangères maîtrisées</span><a href="#russian"><button><i class="fas fa-angle-down"></i></button></a></div>
+                    <div class="language"><span id="l" class="click">Langues Étrangères maîtrisées</span><a href="#russian"><button><i class="fas fa-angle-down"></i></button></a></div>
                     <div class="languages">
                         <h2 class="ls">Langues parlées:</h2>
                         <div class="de"><p>allemand</p></div><div class="german"></div><div class="rest"></div><a data-fancybox="energie" href="img/bubble1meaning.png"><img src="img/bubble1.png" /></a>
@@ -131,19 +132,34 @@
     <script src="js/jquery.fancybox.min.js"></script>
     
     <script>
+         document.querySelectorAll('.click').forEach(eleme =>{
+            
+            eleme.addEventListener('click', function(){
+                
+            child=eleme.parentNode.nextSibling.nextSibling
+            child1=eleme.nextSibling.firstChild
+            
+            if(child.style.display=="block"){
+                child.style.display="none"
+                child1.innerHTML='<i class="fas fa-angle-down"></i>'
+                            
+            }else{
+                child.style.display="block"
+                child1.innerHTML='<i class="fas fa-angle-up"></i>'      
+    }})})
         document.querySelectorAll('button').forEach(eleme =>{
             
                 eleme.addEventListener('click', function(){
-                    
-                    child=eleme.parentNode.parentNode.nextSibling.nextSibling
-                    child1=eleme.parentNode.firstChild
-                    console.log(child1)
-                    if(child.style.display=="block"){
-                        child.style.display="none"
-                        child1.innerHTML='<i class="fas fa-angle-down"></i>'                
-                    }else{
-                       child.style.display="block"
-                        child1.innerHTML='<i class="fas fa-angle-up"></i>'      
+                
+                child=eleme.parentNode.parentNode.nextSibling.nextSibling
+                child1=eleme.parentNode.firstChild
+        
+                if(child.style.display=="block"){
+                    child.style.display="none"
+                    child1.innerHTML='<i class="fas fa-angle-down"></i>'                
+                }else{
+                    child.style.display="block"
+                    child1.innerHTML='<i class="fas fa-angle-up"></i>'      
         }})})
             
     jQuery(document).ready(function ($) {
