@@ -1,11 +1,16 @@
 body{
-    background-color: rgb(241, 236, 236);
+    background-color: rgb(251, 242, 204);
 }
 
 h2{
-    color: purple;
+    color: rgb(228, 155, 21);
 }
-
+h4{
+    color: rgb(228, 155, 21);
+    font-size: 1.8em;
+    margin: 0;
+    padding: 0; 
+}
 h1{
     margin-top: 80px;
 }
@@ -15,11 +20,147 @@ p{
     padding: 0;
 }
 
+.site{
+    font-size: 25px!important;
+    color: rgb(42, 55, 247);
+}
+
+.br{
+    display: block;
+}
+
+
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: rgb(243, 141, 8);
+}
+.burger {
+  position: fixed;
+  background:#f1f1f1;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 15px;
+ 
+  padding: 5px;
+  
+  top: 25px;
+  right: 15px;
+  z-index: 999999;
+}
+
+.navicon {
+    z-index: 1;
+   
+  cursor: pointer;
+  display: block;
+  width: 45px;
+  height: 4px;
+  border-radius: 15px;
+  background: black;
+  position: relative;
+}
+
+.navicon::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: black;
+  top: 12px;
+  border-radius: 15px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.navicon::after {
+  content: "";
+  border-radius: 15px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: black;
+  top: -12px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+
+
+
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after,
+.menu-btn:checked ~ .menu-icon .navicon:before {
+  top: 0;
+}
+
+.nav {
+
+  position: fixed;
+  right: -100%;
+  width: 100%;
+
+  color: black;
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  transition: ease-in-out 800ms;
+  top: 0;
+}
+
+.nav li {
+  text-transform: uppercase;
+  padding: 8px 0;
+}
+
+.menu-btn:checked ~ .nav {
+  right: 0;
+  transition: ease-in-out 600ms;
+  background:rgb(255, 253, 249);
+ 
+
+
+}
+
+
 .general{
     display: flex;
     flex-direction: column;
     width: 80%;
-    border: 15px solid purple;
+    border: 15px solid rgb(241, 174, 16);
     border-radius: 90px;
     margin: 0 auto;
     padding: 2%;
@@ -34,7 +175,10 @@ p{
     padding:0;
 }
 .contact{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
    
     font-family: 'Ibarra Real Nova', serif;
@@ -46,8 +190,7 @@ img{
 }
 .pro_pic{
     margin-top: 30px;
-    width: 200px;
-    height: 250px;
+    object-fit: cover;
    
 }
 .general_info{
@@ -101,7 +244,7 @@ img{
     height: 15px;
     width: 100px;
     border: 1px solid black;
-    background-color: blueviolet;
+    background-color: rgb(243, 141, 8);
     margin-left: 30px;
    
 }
@@ -115,7 +258,7 @@ p{
     font-family: 'Ibarra Real Nova', serif;
 }
 .logistics, .kwowhow, .languages, .pro{
-    display: none;
+    display: block;
     font-family: 'Ibarra Real Nova', serif;
     margin-bottom: 30px;
     margin-top: 0;
@@ -154,7 +297,7 @@ p{
     height: 15px;
     width: 80px;
     border: 1px solid black;
-    background-color: blueviolet;
+    background-color: rgb(243, 141, 8);
     margin-left: 30px;
     
     
@@ -164,13 +307,18 @@ img{
     height: 50px;
     margin:0;
 }
-
+.pro_pic{
+    width: 200px;
+    height: 250px;
+    margin:0;
+    object-fit: cover;
+}
 .russian {
     display: inline-block;
     height: 15px;
     width: 60px;
     border: 1px solid black;
-    background-color: blueviolet;
+    background-color: rgb(243, 141, 8);
     margin-left: 30px;
 }
 
@@ -182,7 +330,7 @@ img{
 }
 button{
     display:inline-block;
-    background-color: purple;
+    background-color: rgb(177, 102, 5);
     height:75%;
     border: 0;
     color: white;
@@ -191,9 +339,10 @@ button{
    
 }
 .prof, .know, .language, .formation{
-    width: 85%;
-    margin: 0 auto;
-    border: 1px solid purple;
+   
+    line-height: 55px;
+  
+    border: 1px solid rgb(177, 102, 5);
     margin-bottom: 30px;
     font-family: 'Ibarra Real Nova', serif;
     
@@ -214,7 +363,7 @@ button{
 }
 
 #slider {
-    width: 300px;
+    width: 80vw;
     position: relative;
     overflow: hidden;
     margin: 0 auto;
@@ -226,7 +375,7 @@ button{
     margin: 0 auto;
     padding: 0;
     height: 500px;
-    width: 300px;
+    width: 80vw;
     list-style: none;
 }
 
@@ -236,9 +385,9 @@ button{
     float: left;
     margin: 0 auto;
     padding: 0;
-    width: 300px;;
+    width: 80vw;
     height: 500px;
-    background: #ccc;
+    background: rgb(255, 255, 255);
     text-align: center;
 }
   
@@ -273,20 +422,34 @@ button{
     border-radius: 2px 0 0 2px;
   }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 1050px){
 
 p, h2, h1{
     font-family: Arial, Helvetica, sans-serif;
 }
+.nav {
 
+    position: fixed;
+    right: -40%;
+    width: 40%;
+    min-height: 30vh;
+    color: black;
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    transition: ease-in-out 800ms;
+    top: 0;
+  }
 .globalknowledge{
     margin: 0;
     padding: 0;
 }
 
 .purple_background{
-    background-color: purple;
- 
+    background-color: rgb(248, 188, 109);
+
 }
 
 .title{
@@ -297,8 +460,11 @@ p, h2, h1{
 }
 
 .name{
+    margin: 0;
+    padding: 0;
     font-size: 30px;
     font-family: 'Ibarra Real Nova', serif;
+    font-weight: lighter;
 }
 .birth{
     font-size: 25px;
@@ -310,16 +476,18 @@ p, h2, h1{
 .contact_title, .phone, .address{
     font-size: 30px;
     font-family: 'Ibarra Real Nova', serif;
-
+    color: rgb(177, 102, 5)
 }
 
-
+.conta{
+    color: blue;
+}
 
 .general{
     display: flex;
     flex-direction: row;;
     width: 80%;
-    border: 15px solid purple;
+    border: 15px solid rgb(231, 156, 57);
     border-radius: 90px;
     margin: 0 auto;
     padding-top: 1%;
@@ -342,7 +510,7 @@ p, h2, h1{
     margin-top: 0;
   
     padding: 0;
-   
+   object-fit: cover;
     width: 200px;
     height: 250px;
 }
@@ -399,7 +567,7 @@ p, h2, h1{
     height: 15px;
     width: 100px;
     border: 1px solid black;
-    background-color: blueviolet;
+    background-color: rgb(241, 174, 16);
     margin-left: 30px; 
 }
 
@@ -414,12 +582,12 @@ p{
 }
 
 .logistics, .kwowhow, .languages, .pro{
-    display: none;
+    display: block;
 }
 
 button{
     display:inline-block;
-    background-color: purple;
+    background-color: rgb(243, 141, 8);
     height: 75px;
     border: 0;
     color: white;
@@ -431,9 +599,9 @@ button{
 .prof, .know, .language, .formation{
     width: 85%;
     margin: 0 auto;
-    border: 1px solid purple;
+    border: 1px solid rgb(243, 141, 8);
     margin-bottom: 30px;
-    background-color: rgb(221, 202, 221);
+    background-color: rgb(251, 245, 232);;
     font-family: 'Ibarra Real Nova', serif;
    
 }
@@ -443,14 +611,16 @@ button{
 }
 
 #f, #p , #c, #l{
+  
     display: inline-block;
-    text-align: left;
-    height: 55px;
-    width: 95%;
-   font-size: 30px;
-   padding-left: 30px;
-   color: purple;
-   font-family: 'Ibarra Real Nova', serif;
+    height: 75px;
+    line-height: 75px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 30px;
+    padding-left: 30px;
+    color: rgb(243, 141, 8);
+
     font-family: Arial, Helvetica, sans-serif;
    
 }
@@ -494,7 +664,7 @@ button{
     height: 15px;
     width: 80px;
     border: 1px solid black;
-    background-color: blueviolet;
+    background-color: rgb(241, 174, 16);
     margin-left: 30px; 
 }
 
@@ -509,7 +679,7 @@ img{
     height: 15px;
     width: 60px;
     border: 1px solid black;
-    background-color: blueviolet;
+    background-color: rgb(241, 174, 16);
     margin-left: 30px;
 }
 
@@ -521,7 +691,7 @@ img{
 }
 
 #slider {
-    width: 300px;
+    width: 950px;
     position: relative;
     overflow: hidden;
     margin: 0 auto;
@@ -532,31 +702,33 @@ img{
     position: relative;
     margin: 0;
     padding: 0;
-    width: 650px;
+    width: 950px;
     height: 600px;
     list-style: none;
 }
 #slider ul li {
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     float: left;
     margin: 0;
     padding: 0;
-    width: 650px;
+    width:  950px;
     height: 500px;
-    background: #ccc;
+    background: rgb(255, 255, 255);
     text-align: center;
   }
   
 a.control_prev, a.control_next {
     position: absolute;
-    top: 40%;
+    top: 42%;
     z-index: 999;
     display: block;
     padding: 4% 3%;
     width: auto;
     height: auto;
-    background: #2a2a2a;
+    background: #c7c7c7;
     color: #fff;
     text-decoration: none;
     font-weight: 600;

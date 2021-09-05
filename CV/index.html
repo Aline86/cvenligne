@@ -12,19 +12,34 @@
       
     </head>
     <header>
+        <div class="burger">
+       
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+              <span class="navicon"></span>
+            </label>
+            <div class="nav">
+              <ul>
+                <li><a href="#formation" class="a">FORMATION</a></li>
+                <li><a href="#experiences" class="a">EXPERIENCES PROFESSIONNELLES</a></li>
+                <li><a href="#realisation" class="a">REALISATIONS</a></li>
+                <li><a href="#language" class="a">LANGUES ETRANGERES</a></li>
+              </ul>
+            </div>
+        </div>
         <div class="purple_background">
             <div class="general">
                 <div class="profil_pic">
                     <img class="pro_pic" src="img/profil.png" alt="profil" />
                 </div>
                 <div class="general_info">
-                    <p class="name">HAESTIE Claire-Aline</p>
-                    <h1 class="title">Stage de Développement Web</h1>
-                    <div class="length"><strong>Avril - Mai</strong></div>
+                    <h1 class="name">HAESTIE Claire-Aline</h1>
+                    <p class="title"><strong>Développeuse Web Junior</strong></p>
+                    <div class="length"><strong>1 an d'expérience</strong></div>
                 </div>
                 <div class="contact">
                     <h2 class="contact_title">CONTACT:</h2>
-                    <p class="mail"><a style="cursor:pointer" href="mailto:ca.haestie@gmail.com">ca.haestie@gmail.com</a></p>
+                    <p class="mail"><a class="conta" style="cursor:pointer" href="mailto:ca.haestie@gmail.com">ca.haestie@gmail.com</a></p>
                 </div>
             </div>
         </div>
@@ -33,94 +48,95 @@
         <main>
             <div class="globalknowledge">
                 <div class="computer_knowledge">
-                    <h2 class="langues">Langages abordés en formation :</h2>
+                    <h2 class="langues">Langages abordés en formation et en entreprise :</h2>
                     <p class="ck">
                         <i class="fab fa-js-square"></i><span class="js">JavaScript</span>
                         <i class="fab fa-php"></i><span class="php">PHP/MySQL</span>
                         <span class="ajax" >AJAX</span>
-                        <span class="python">Python </span><br />
-                        <span class="html">HTML /CSS/ BootStrap</span><br />
+                        <span class="python">JAVA</span><br />
+                        <span class="html">HTML / CSS / BootStrap</span><br />
                         <span class="framework"><u>Frameworks :</u></span>
-                        <span class="symfony">Symfony</span>
-                        <i class="fab fa-react"></i><span class="react"> Notions en React</span>
+                        <span class="symfony">Symfony / Laravel / Prestashop / React</span>
                     </p>
                 </div>
                 
             </div>
             <div class="button">
                 <div class="inside_button">
-                
-                       <div class="formation"><a href="#forma"><span style="cursor:pointer" id="f" class="click">Formation</span></a><a href="#forma"><button style="cursor:pointer"><i class="fas fa-angle-down"></i></button></a></div>
-                        <div class="logistics" id="forma">
-                            <div class="global_logistics">
-
-                                <div class="study">
-                                    <h2>Formation</h2>
-                                    <h3>Octobre 2019 - Juin 2020 :</h3><p>Titre Professionnel Développeur d'Applications web et web mobile ISFAC de Poitiers</p>
-                                    <h3>Septembre 2012 - Octobre 2014 :</h3><p>Master de Management des PME et Entrepreneuriat Institut d’Administration des Entreprises Tours, France</p>
-                                    <h3>Septembre 2008 - Septembre 2011 :</h3><p>Licence de Langues Étrangères Appliquées Université de Poitiers + Licence 3 Erasmus Université Otto Von Guericke de Magdeburg Allemagne</p>
-                                </div>
+                    <div id="formation" class="formation"><span id="f" class="click">Formation</span></div>
+                    <div class="logistics" id="forma">
+                        <div class="global_logistics">
+                            <div class="study">
                                 
-                            </div>   
-                     
+                                <h3>Septembre 2020 - Septembre 2021</h3><p>Licence Professionnelle "Technologies Logicielles pour le Web et les Terminaux Mobiles". Université de Poitiers</p>
+                                <h3>Octobre 2019 - Juin 2020 :</h3><p>Titre Professionnel Développeur d'Applications web et web mobile ISFAC de Poitiers</p>
+                                <h3>Septembre 2012 - Octobre 2014 :</h3><p>Master de Management des PME et Entrepreneuriat Institut d’Administration des Entreprises Tours, France</p>
+                                <h3>Septembre 2008 - Septembre 2011 :</h3><p>Licence de Langues Étrangères Appliquées Université de Poitiers + Licence 3 Erasmus Université Otto Von Guericke de Magdeburg Allemagne</p>
+                            </div>                 
+                        </div>    
                     </div>
-                  
-                    <div class="prof"><a href="#pro"><span style="cursor:pointer" id="p" class="click">Expériences professionnelles en France et à l'étranger</span></a><a href="#pro"><button><i class="fas fa-angle-down"></i></button></a></div>
-                    <div class="pro">
-                        <h2 id="pro">Expériences professionnelles</h2>
-                        <div id="slider" class="slider">
-                            <a href="#barre" class="control_next">></a>
-                            <a href="#barre" class="control_prev"><</a>
-                            <ul>
-                                <li>
-                                    <h2 >TOP LOGISTIK</h2>
-                                    <h3>Juin 2016 – Novembre 2016 : </h3>
-                                    <p>Manager des Transports  France / Allemagne Top Logistik Kufstein, Autriche</p>
-                                    <h2>LKW WALTER</h2>
-                                    <h3>Mars 2015 – Mai 2016 : </h3>
-                                    <p >Manager des Transports France / Benelux LKW Walter Kufstein, Autriche</p>
-                                </li>
-                                <li>
-                                    <div class="ex_pro">
-                                        <h2>Décembre 2018 - Juin 2019:</h2>
-                                        <p>Chargée de clientèle germanophone SMCP Armatis LC Chasseneuil du Poitou, France</p>
-                                        <h2>Juin 2018 – Novembre 2018:</h2><p>Commercial, Connexcars, Bacelone, Espagne</p>
-                                        <h2>Juin 2017 - Décembre 2017 :</h2><p>Chargée de clientèle germanophone Vestiaire Collective Armatis LC Chasseneuil du Poitou, France</p>
-                                    </div>
-                                </li>
-                                    
-                                <li>
-                                    <div class="internship">
-                                        <h2>STAGES EN ENTREPRISE Avril 2014 - Septembre 2014 :</h2><p>Assistante en gestion immobilière Nexity Studéa Nantes, France</p>
-                                        <h2>Mai 2013 - Septembre 2013 :</h2><p>Assistante en gestion immobilière Nexity Studéa Tours, France </p> 
-                                    </div>
-                                </li>
-                                
-                            </ul>  
-                    </div>
-                    </div>
-                 
-                    <div class="know"><a href="#organisation"><span style="cursor:pointer" id="c" class="click">Qualités professionnelles</span></a><a href="#organisation"><button style="cursor:pointer"><i class="fas fa-angle-down"></i></button></a></div>
-                    <div class="kwowhow">
-                        <h2>Qualités professionnelles</h2>
-                        <p>Rigueur</p>
-                        <p>Curiosité</p>
-                        <p>Créativité</p>
-                        <p id="organisation">Organisation</p i>
-                    </div>
-           
-                 
-                    <div class="language"><a href="#russian"><span style="cursor:pointer" id="l" class="click">Langues Étrangères maîtrisées</span></a><a href="#russian"><button style="cursor:pointer"><i class="fas fa-angle-down"></i></button></a></div>
-                    <div class="languages">
-                        <h2 class="ls">Langues parlées:</h2>
-                        <div class="de"><p>allemand</p></div><div class="german"></div><div class="rest"></div><a data-fancybox="energie" href="img/bubble1meaning.png"><img src="img/bubble1.png" /></a>
-                        <br />
-                        <div class="en"><p>anglais</p></div><div class="english"></div><div class="rest1"></div><a data-fancybox="energie" href="img/bubble1meaning.png"><img src="img/bubble1.png" /></a>
-                        <br />
-                        <div class="es"><p>espagnol</p></div><div class="spanish"></div><div class="rest2"></div><a data-fancybox="energie" href="img/bubble2meaning.png"><img src="img/bubble2.png" /></a>
-                        <br />
-                        <div class="ru" id="russian"><p>russe</p></div><div class="russian"></div><div class="rest3"></div><a data-fancybox="energie" href="img/bubble3meaning.png"><img src="img/bubble3.png" /></a>
-                    </div>
+                    <div id="experiences" class="prof"><span id="p" class="click">Expériences professionnelles en France et à l'étranger</span></div>
+                        <div class="pro">
+                            
+                            <div id="slider" class="slider">
+                                <a href="#barre" class="control_next">></a>
+                                <a href="#barre" class="control_prev"><</a>
+                                <ul>
+                                    <li>
+                                        <h4>ALTERNETIS</h4>
+                                        <h3>Septembre 2020 - Septembre 2021 : </h3>
+                                        <p><strong>Année d'alternance sur le Framework Prestashop.</strong><br />
+                                             Création / Migration de modules - Migrations de sites - Intéraction avec l'API de Prestashop et utilisation de la librairie PrestashopWebService du packagist de composer à partir d'un site externe codé en MVC.</p>
+                                        <h4 >TOP LOGISTIK</h4>
+                                        <h3>Juin 2016 – Novembre 2016 : </h3>
+                                        <p>Manager des Transports  France / Allemagne Top Logistik Kufstein, Autriche</p>
+                                        <h4>LKW WALTER</h4>
+                                        <h3>Mars 2015 – Mai 2016 : </h3>
+                                        <p >Manager des Transports France / Benelux LKW Walter Kufstein, Autriche</p>
+                                    </li>
+                                    <li>
+                                        <div class="ex_pro">
+                                            <h4>Décembre 2018 - Juin 2019:</h4>
+                                            <p>Chargée de clientèle germanophone SMCP Armatis LC Chasseneuil du Poitou, France</p>
+                                            <h4>Juin 2018 – Novembre 2018:</h4><p>Commercial, Connexcars, Bacelone, Espagne</p>
+                                            <h4>Juin 2017 - Décembre 2017 :</h4><p>Chargée de clientèle germanophone Vestiaire Collective Armatis LC Chasseneuil du Poitou, France</p>
+                                        </div>
+                                    </li>
+                                        
+                                    <li>
+                                        <div class="internship">
+                                            <h4>STAGES EN ENTREPRISE </h4>
+                                            <h4>Mai 2020 - Juin 2020 :</h4>
+                                            <p>Alternetis - Poitiers <br /> Stage de développement web sur Prestashop et Symfony - création de modules Prestashop - Ajout de fonctionnalités à une application web de gestion de licences sur Symfony</p>
+                                            <h4>2014 - Septembre 2014 :</h4>
+                                            <p>Assistante en gestion immobilière Nexity Studéa Nantes, France</p>
+                                            <h4>Mai 2013 - Septembre 2013 :</h4><p>Assistante en gestion immobilière Nexity Studéa Tours, France </p> 
+                                        </div>
+                                    </li>  
+                                </ul>  
+                            </div>
+                        </div>
+                        <div id="realisation" class="know"><span id="c" class="click">Réalisations</span></div>
+                        <div class="kwowhow">
+                            <p><strong>Création d'une alternative à Doctolib pour une sage-femme libérale - site de réservation de rendez-vous - Laravel / JS - Ajax - PHP - CSS</p></strong>
+                            <p>Possibilité de voir le Front-Office à l'adresse suivante :</p>
+                            <a class="site" src="site de réservation de rendez-vous" href="https://paule-bernard-sagefemme-poitiers.fr">https://paule-bernard-sagefemme-poitiers.fr</a>
+                            <p><strong>Création d'un site vitrine pour une psychologue libérale - HTML / CSS / JS </p></strong>
+                            <a class="site" src="site vitrine" href="https://psychologue-durand.fr">https://psychologue-durand.fr</a>
+                            <p><strong>Lien vers Github - voir quelques projets en ligne</strong></p>
+                            <a class="site" src="github" href= "https://github.com/Aline86">https://github.com/Aline86</a>
+                        </div>
+                        <div id="language" class="language"><span id="l" class="click">Langues Étrangères maîtrisées</span></div>
+                        <div class="languages">
+                            
+                            <div class="de"><p>allemand</p></div><div class="german"></div><div class="rest"></div><a data-fancybox="energie" href="img/bubble1meaning.png"><img src="img/bubble1.png" /></a>
+                            <br />
+                            <div class="en"><p>anglais</p></div><div class="english"></div><div class="rest1"></div><a data-fancybox="energie" href="img/bubble1meaning.png"><img src="img/bubble1.png" /></a>
+                            <br />
+                            <div class="es"><p>espagnol</p></div><div class="spanish"></div><div class="rest2"></div><a data-fancybox="energie" href="img/bubble2meaning.png"><img src="img/bubble2.png" /></a>
+                            <br />
+                            <div class="ru" id="russian"><p>russe</p></div><div class="russian"></div><div class="rest3"></div><a data-fancybox="energie" href="img/bubble3meaning.png"><img src="img/bubble3.png" /></a>
+                        </div>
                     <div class="signature"><p>Mis en ligne avec Netlify et GitHub</p></div>
                 </div>
             </div>
@@ -131,25 +147,14 @@
     <script src="js/jquery.fancybox.min.js"></script>
     
     <script>
-        var unfold =(bouton)=>{
-        document.querySelectorAll(bouton).forEach(eleme =>{
-            
-                eleme.addEventListener('click', function(){
-                
-                child=eleme.parentNode.parentNode.nextElementSibling
-                child1=eleme.parentNode.parentNode.lastChild.firstChild
-
-                if(child.style.display=="block"){
-                    child.style.display="none"
-                    child1.innerHTML='<i class="fas fa-angle-down"></i>'                
-                }else{
-                    child.style.display="block"
-                    child1.innerHTML='<i class="fas fa-angle-up"></i>'      
-        }})})
-        } 
-
-        unfold('.click')
-        unfold('button')
+       window.onload = init
+        function init() {
+            document.querySelectorAll('.a').forEach(elem =>{
+                elem.addEventListener('click', function(){
+                    $("#menu-btn").prop('checked', false);
+                })
+            })
+        }
     jQuery(document).ready(function ($) {
      
      
