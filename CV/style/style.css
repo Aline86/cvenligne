@@ -310,7 +310,7 @@ img{
 .pro_pic{
     width: 200px;
     height: 250px;
-    margin:0;
+    margin-top:15px;
     object-fit: cover;
 }
 .russian {
